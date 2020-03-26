@@ -1,0 +1,8 @@
+@import '../../util/colors';
+
+.header {
+  background-color: $header;
+  color: $white;
+  padding: 15px 25px;
+  text-align: left;
+}
