@@ -27,6 +27,7 @@
     "no-console": "warn",
     "prefer-const": "off",
     "no-use-before-define": "off",
+    "react/prop-types": "off",
     "import/no-extraneous-dependencies": "off",
     "react/jsx-filename-extension": [
       1,
