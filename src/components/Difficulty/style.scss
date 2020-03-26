@@ -1,0 +1,15 @@
+.difficulty-indicator {
+  --alpha: .2;
+
+  display: flex;
+  line-height: .8rem;
+  align-items: center;
+  background-color: rgba(var(--headerRgb), var(--alpha));
+  border-radius: 12px;
+  padding: 3px 14px;
+  span {
+    margin-left: 5px;
+    color: var(--textColorGray);
+    font-size: .7rem;
+  }
+}
