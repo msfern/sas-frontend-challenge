@@ -1,0 +1,9 @@
+.close-question {
+  display: flex;
+  cursor: pointer;
+  span {
+    margin-left: 5px;
+    color: var(--textColorGray);
+    font-size: .8rem;
+  }
+}
