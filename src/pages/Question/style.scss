@@ -1,0 +1,15 @@
+.question {
+  width: 700px;
+  margin: 10px auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+  }
+}
