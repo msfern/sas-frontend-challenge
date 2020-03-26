@@ -12,20 +12,23 @@
   outline: 0;
 }
 
+html {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 html, body, #root {
   height: 100%;
 }
 
 body {
-  background: $background;
+  background: var(--background);
   -webkit-font-smoothing: antialiased;
 }
 
 body, input, button {
   font-family: 'Roboto' , sans-serif;
-  color: $textColor;
-  font-size: 18px;
-  line-height: 24px;
+  color: var(--textColor);
 }
 
 a {
