@@ -1,0 +1,25 @@
+.question {
+  &__container {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    box-shadow: 0px 1px 4px rgba(52, 60, 88, 0.4);
+    border-radius: 8px;
+    padding: 27px 40px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    margin: 26px 0 40px;
+    font-size: .9rem;
+  }
+
+  &__options {
+    display: grid;
+    grid-template-rows: repeat(4, minmax(60px, 1fr));
+    gap: 16px;
+  }
+}
