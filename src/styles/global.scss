@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import './util/colors';
+@import './modules/_font.scss';
+@import './modules/_colors.scss';
 
 * {
   margin: 0;
@@ -13,8 +13,8 @@
 }
 
 html {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: $font-size-base;
+  line-height: $line-height;
 }
 
 html, body, #root {
@@ -24,11 +24,15 @@ html, body, #root {
 body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
+  font-family: $primary-font;
 }
 
 body, input, button {
-  font-family: 'Roboto' , sans-serif;
   color: var(--textColor);
+}
+
+button {
+  font-family: $secondary-font;
 }
 
 a {
