@@ -1,0 +1,29 @@
+.result__report {
+  &__detailed {
+    display: flex;
+    font-size: .8rem;
+    justify-content: space-between;
+    width: 100%;
+    &-overview {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      p:first-child {
+        font-weight: 500;
+      }
+
+      &:not(:last-child) {
+        &:after {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 2px;
+          background-color: var(--divider);
+          right: -50px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

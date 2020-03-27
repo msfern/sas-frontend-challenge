@@ -1,0 +1,21 @@
+.result {
+  font-family: 'Avenir' , sans-serif;
+  color: var(--textColorSecondary);
+  background-color: var(--white);
+  box-shadow: 0px 1px 4px rgba(52, 60, 88, 0.4);
+  border-radius: 8px;
+  max-width: 535px;
+  margin: 60px auto;
+  overflow: hidden;
+
+  .button {
+    margin-bottom: 27px;
+  }
+
+  &__report {
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

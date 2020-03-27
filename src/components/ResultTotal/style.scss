@@ -1,0 +1,29 @@
+.result__report {
+  &__total {
+    --alpha: .08;
+    background-color: rgba(var(--headerRgb), var(--alpha));
+    border-radius: 10px;
+    display: inline-flex;
+    font-size: .8rem;
+    padding: 10px;
+    width: 200px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    &-overview {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex: 1;
+
+      span {
+        line-height: 1rem;
+        &:first-child {
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 1.5rem;
+        }
+      }
+
+    }
+  }
+}
