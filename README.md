@@ -6,7 +6,7 @@
 
 ## 📙 Overview
 
-As per the challenge description, its goal was to create a Quiz application. The UI was provided on fIGMA. Some of the functionalities in this application were:
+As per the challenge description, its goal was to create a Quiz application. The UI was provided on Figma. Some of the functionalities in this application were:
 
 - **Feedback when answering a question.**
 - **Full Report at the end of the game.**
