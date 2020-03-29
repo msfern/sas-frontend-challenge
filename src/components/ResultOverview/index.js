@@ -4,13 +4,23 @@ import ResultTotal from '../ResultTotal/index';
 import ResultDetailed from '../ResultDetailed/index';
 import './style.scss';
 
-const ResultOverview = () => {
+const ResultOverview = ({
+  totalCorrect,
+  totalWrong,
+  totalEasy,
+  totalMedium,
+  totalHard,
+}) => {
   return (
     <>
       <ResultHeader />
       <div className="result__report">
-        <ResultTotal />
-        <ResultDetailed />
+        <ResultTotal totalCorrect={totalCorrect} totalWrong={totalWrong} />
+        <ResultDetailed
+          totalEasy={totalEasy}
+          totalMedium={totalMedium}
+          totalHard={totalHard}
+        />
       </div>
     </>
   );

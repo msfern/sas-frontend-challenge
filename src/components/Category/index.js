@@ -1,8 +1,16 @@
 import React from 'react';
 import './style.scss';
 
-const Category = () => {
-  return <div className="category__card">História</div>;
+const Category = ({ name, id, goToCategory }) => {
+  const handleClick = () => {
+    goToCategory(name, id);
+  };
+
+  return (
+    <div className="category__card" onClick={handleClick}>
+      {name}
+    </div>
+  );
 };
 
 export default Category;

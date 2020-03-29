@@ -1,15 +1,15 @@
 import React from 'react';
 import './style.scss';
 
-const ResultTotal = () => {
+const ResultTotal = ({ totalCorrect, totalWrong }) => {
   return (
     <div className="result__report__total">
       <div className="result__report__total-overview">
-        <span>7</span>
+        <span>{totalCorrect}</span>
         <span>acertos</span>
       </div>
       <div className="result__report__total-overview">
-        <span>3</span>
+        <span>{totalWrong}</span>
         <span>erros</span>
       </div>
     </div>

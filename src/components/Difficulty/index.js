@@ -1,13 +1,17 @@
 import React from 'react';
 import './style.scss';
 
-const Difficulty = () => {
+const Difficulty = ({ difficulty }) => {
+  const difficulties = ['Fácil', 'Médio', 'Difícil'];
+  let stars = [];
+  for (let i = 0; i < difficulty + 1; i++) {
+    stars.push(<img key={i} src="../../assets/images/star.svg" alt="star" />);
+  }
+
   return (
     <div className="difficulty-indicator">
-      <img src="../../assets/images/star.svg" alt="star" />
-      <img src="../../assets/images/star.svg" alt="star" />
-      <img src="../../assets/images/star.svg" alt="star" />
-      <span>Difícil</span>
+      {stars}
+      <span>{difficulties[difficulty]}</span>
     </div>
   );
 };
