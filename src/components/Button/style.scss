@@ -8,8 +8,13 @@
   font-size: .9rem;
   font-weight: 500;
   margin: auto;
-  display: block;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+
+  img {
+    margin-left: 20px;
+  }
 
   &:disabled {
     background-color: var(--disabled);

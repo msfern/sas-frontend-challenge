@@ -1,0 +1,37 @@
+.feedback {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  --alpha: 0.5;
+  background-color: rgba(var(--textColorRgb), var(--alpha));
+
+  &-container {
+    --alpha: 0.4;
+    background: var(--white);
+    border: 3px solid var(--border);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 3px 6px rgba(var(--textColorSecondary), var(--alpha));
+    border-radius: 8px;
+    padding: 30px 90px;
+    text-align: center;
+    color: var(--textColorSecondary);
+    font-size: 1.3rem;
+  }
+
+  p {
+    margin: 15px 0 30px;
+  }
+
+  &--correct {
+    border-color: var(--success);
+  }
+
+  &--wrong {
+    border-color: var(--error);
+  }
+}
